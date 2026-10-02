@@ -1,0 +1,46 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="museGradient" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB347"/>
+      <stop offset="0.48" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="18" y1="13" x2="42" y2="39" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#C2410C" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Soft rounded tile -->
+  <rect x="5" y="5" width="54" height="54" rx="17" fill="white"/>
+  <rect x="5.75" y="5.75" width="52.5" height="52.5" rx="16.25" stroke="#E4E4E7" stroke-width="1.5"/>
+
+  <!-- Abstract M / creative spark -->
+  <path
+    d="M17 43V21.5C17 19.9 18.05 18.5 19.55 18.05C21.05 17.6 22.65 18.1 23.55 19.35L32 30.9L40.45 19.35C41.35 18.1 42.95 17.6 44.45 18.05C45.95 18.5 47 19.9 47 21.5V43"
+    stroke="url(#museGradient)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#shadow)"
+  />
+
+  <!-- Creative spark -->
+  <path
+    d="M45.5 11.5L47.1 15.4L51 17L47.1 18.6L45.5 22.5L43.9 18.6L40 17L43.9 15.4L45.5 11.5Z"
+    fill="url(#museGradient)"
+  />
+
+  <!-- Subtle highlight -->
+  <path
+    d="M20 21.5C20 20.8 20.45 20.25 21.1 20.05C21.75 19.85 22.35 20.1 22.75 20.65L31.95 33.2L41.2 20.65C41.6 20.1 42.2 19.85 42.85 20.05"
+    stroke="url(#shine)"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.8"
+  />
+</svg>
