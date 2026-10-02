@@ -78,7 +78,7 @@ export function AuthForm({ initialMode = "sign-in" }: AuthFormProps) {
                     name,
                     email,
                     password,
-                    callbackURL: "/dashboard",
+                    callbackURL: "/projects",
                 });
 
                 if (error) {
@@ -90,7 +90,7 @@ export function AuthForm({ initialMode = "sign-in" }: AuthFormProps) {
                     email,
                     password,
                     rememberMe: true,
-                    callbackURL: "/dashboard",
+                    callbackURL: "/projects",
                 });
 
                 if (error) {
@@ -99,7 +99,7 @@ export function AuthForm({ initialMode = "sign-in" }: AuthFormProps) {
                 }
             }
 
-            router.push("/dashboard");
+            router.push("/projects");
             router.refresh();
         } catch {
             setError("Something Went Wrong. Please Try Again In a Moment.");
@@ -117,7 +117,7 @@ export function AuthForm({ initialMode = "sign-in" }: AuthFormProps) {
         try {
             await authClient.signIn.social({
                 provider,
-                callbackURL: "/dashboard",
+                callbackURL: "/projects",
             });
         } catch {
             setError(

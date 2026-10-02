@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { AuthForm } from "@/components/auth-form";
+import React from "react";
 
 interface AuthPageProps {
     params: Promise<{

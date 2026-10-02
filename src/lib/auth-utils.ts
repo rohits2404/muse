@@ -18,7 +18,7 @@ export const authIsRequired = async () => {
     const session = await authSession();
 
     if (!session) {
-        redirect("/auth/sign-in");
+        redirect("/");
     }
 
     return session;

@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { auth } from "@/lib/auth";
 import { AccountSettings } from "@/components/account-settings";
 import { MuseBackground } from "@/components/shared/muse-background";
+import React from "react";
 
 const validPaths = ["profile", "security", "sessions"] as const;
 
